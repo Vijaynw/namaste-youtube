@@ -6,13 +6,9 @@ import { Outlet } from 'react-router-dom'
 const Body = () => {
   return (
     <div className='grid grid-flow-col '>
-      {/* Body */}
-        <div className='col-span-1 borde'>
-
+    
+        <div className='flex'>
         <SideBar />
-        </div>
-      <div className='border col-span-10'>
-        {/* <MainContainer /> */}
         <Outlet />
 
       </div>
