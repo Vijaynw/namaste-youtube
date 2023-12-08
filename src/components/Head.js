@@ -4,7 +4,7 @@ const Head = () => {
   return (
     <div className='grid grid-flow-col p2'>
         <div className='col-span-2 bg--800'> 
-           
+           Logo
             <img src="" alt="" />
             <img src="" alt="" />
         </div>
