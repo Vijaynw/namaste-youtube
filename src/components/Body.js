@@ -4,9 +4,16 @@ import SideBar from './SideBar'
 
 const Body = () => {
   return (
-    <div>Body
-        <MainContainer />
+    <div className='grid grid-flow-col '>
+      {/* Body */}
+        <div className='col-span-1 borde'>
+
         <SideBar />
+        </div>
+      <div className='border col-span-10'>
+        <MainContainer />
+
+      </div>
     </div>
   )
 }
