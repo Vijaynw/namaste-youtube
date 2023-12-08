@@ -1,6 +1,7 @@
 import React from 'react'
 import MainContainer from './MainContainer'
 import SideBar from './SideBar'
+import { Outlet } from 'react-router-dom'
 
 const Body = () => {
   return (
@@ -11,7 +12,8 @@ const Body = () => {
         <SideBar />
         </div>
       <div className='border col-span-10'>
-        <MainContainer />
+        {/* <MainContainer /> */}
+        <Outlet />
 
       </div>
     </div>
