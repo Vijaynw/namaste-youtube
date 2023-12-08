@@ -11,19 +11,19 @@ const [videos,setVideos]=useState([])
         const data = await fetch(YOUTUBE_VIDEO_APi)
         const json = await data.json()
 
-        // console.log(json)
+        console.log(json)
         setVideos(json.items)
-        console.log(videos)
+        // console.log(videos)
     }
     useEffect(()=>{
         getdata()
     },[])
 
   return (
-    <div className='flex flex-wrap p-5 m-2'>
+    <div className='flex flex-wrap p-5 m-2 justify-start'>
         {/* VideoContainer */}
         {
-          videos.map( video =>  <VideoCard key={video.id} title={video.snippet.title} image={video.snippet.thumbnails.standard.url} videoURL={video.id}/> )
+          videos.map( video =>  <VideoCard key={video.id} title={video.snippet.title} image={video.snippet.thumbnails.standard.url} videoURL={video.id} statistics={video.statistics}/> )
         }
        
     </div>
