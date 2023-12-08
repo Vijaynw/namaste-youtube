@@ -4,8 +4,9 @@ import ButtonList from './ButtonList'
 
 const MainContainer = () => {
   return (
-    <div>MainContainer
-<ButtonList />
+    <div className='flex flex-col'>
+      {/* MainContainer */}
+      <ButtonList />
       <VideoContainer/>
     </div>
   )
