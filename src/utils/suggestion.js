@@ -1,0 +1,1 @@
+export const suggestions =[{suggest :'All',path:"all"},{suggest :'Mixes'},{suggest :'Music'},{suggest :'Gaming'}]
