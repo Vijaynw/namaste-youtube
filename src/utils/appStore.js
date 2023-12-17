@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import regionSlice from "./regionSlice";
+import chatSlice from "./chatSlice";
 const appStore =configureStore({
     reducer:{
-        region : regionSlice
+        sidebar : regionSlice,
+        chat:chatSlice
 
     }
     

@@ -3,16 +3,16 @@ import { createSlice } from "@reduxjs/toolkit";
 const regionSlice = createSlice({
     name : 'region',
     initialState:{
-        regionValue : null,
+        sideValue : true,
 
     },
     reducers:{
-        addRegion(state,action){
-            state.regionValue=action.payload
+        toggleSidebar(state,action){
+            state.sideValue=!state.sideValue
         }
     }
 
 })
 
-export const {addRegion} = regionSlice.actions
+export const {toggleSidebar} = regionSlice.actions
 export default regionSlice.reducer

@@ -26,9 +26,13 @@ function App() {
   return (
     <div className="App">
       {/* <h1 className='text-3xl'>Hello World</h1> */}
-    <Head />
     <Provider store={appStore}>
+    <Head />
+    <h1 style={{
+    fontFamily: 'Sacramento , cursive',
 
+    fontWeight: 400,
+}}>Akshay Saini</h1>
     <RouterProvider router={appRouter} />
     </Provider>
     {/* <Body /> */}

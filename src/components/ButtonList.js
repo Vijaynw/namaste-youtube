@@ -4,7 +4,7 @@ import { suggestions } from '../utils/suggestion'
 import { Link } from 'react-router-dom'
 import { topTenCountries } from '../utils/consts'
 import { useSelector } from 'react-redux'
-import { addRegion } from '../utils/regionSlice'
+import { toggleSidebar } from '../utils/regionSlice'
 import { useDispatch } from 'react-redux'
 const ButtonList = () => {
 
@@ -17,7 +17,7 @@ const ButtonList = () => {
   // console.log(btn.current)
   const handle = ()=>{
 
-    dispatch(addRegion(btn.current.value))
+    dispatch(toggleSidebar(btn.current.value))
     setregion(btn.current.value)
     console.log(btn.current.value)
 }
@@ -35,9 +35,10 @@ useEffect(()=>{
         <ul className='flex flex-wrap '>
             {/* <li className='p-2 mx-2 mt-2 rounded-lg border'>Videos</li> */}
            {
-             topTenCountries.map((e)=>  <Link to={'/?reg_code='+e.code} ref={btn} onClick={handle} value={e.code} className='p-2 mx-2 mt-2 rounded-lg border'>{e.name}</Link>
+             suggestions.map((e)=>  <Link to={'/?reg_code='+e.code} ref={btn} onClick={handle} value={e.code} className='p-2 mx-2 mt-2 rounded-lg border'>{e.suggest}</Link>
             )
            }
+         
         </ul>
     </div>
   )
