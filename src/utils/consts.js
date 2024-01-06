@@ -15,3 +15,4 @@ export const YOUTUBE_VIDEO_APi ="https://youtube.googleapis.com/youtube/v3/video
 // export const YOUTUBE_SEARCH_VIDEO_API ="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&key="+API_KEY+"&q="
 export const YOUTUBE_OPTION_VIDEO_API ="https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&key="+API_KEY+"&q="
 {/* <img src="https://flagsapi.com/:country_code/:style/:size.png"> */}
+export const YOUTUBE_COMMENTS_API="https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&videoId=_VB39Jo8mAQ&key="+API_KEY

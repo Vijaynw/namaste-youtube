@@ -57,7 +57,7 @@ const dispatch =useDispatch()
 
       <div className=' w-screen'>
         <h1 className='p-2 m-2 font-bold'>Comments</h1>
-        {/* <CommentsContainer id={}/> */}
+        <CommentsContainer/>
       </div>
 
       </div>
